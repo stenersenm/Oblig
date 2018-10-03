@@ -1,0 +1,145 @@
+
+/*bakgrunn og diverse*/
+body {
+	margin: 0;
+	padding: 0;
+	color: #efeff8;
+	font-size: 14px;
+	font-family: 'Times New Roman', Times, serif;
+	line-height: 1.4em; 
+	background-color: #8590a1;
+	background-repeat: repeat;
+}
+/*Linker i ASIDE*/
+a, a:link, a:visited { color: rgb(117, 167, 196); font-weight: normal; }
+
+/*Tekst størelse og stil */
+p { margin: 2 0 15px 0; padding: 0; }
+
+/*HEADER STILER */
+h2, h3, h4 { color: #a6b5dd; font-weight: normal; } 
+h2 { font-size: 24px; margin: 0 0 25px; padding: 5px 0 }
+h3 { font-size: 22px; margin: 0 0 20px; padding: 0; }
+
+
+
+h1 {
+	color: rgb(255, 255, 255);  /*VELKOMMEN*/
+	margin-left: -30px;
+	font-size:15pt;
+}
+
+
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: rgb(59, 52, 52);  /*fargen på boksen til overskiften*/
+	text-align: center;
+	padding: 15px;
+	
+	opacity: 0.95
+}
+
+/* MENY*/
+
+nav{
+	width: 100%;
+	background-color: rgba(168, 127, 127, 0.13);
+	padding-left: -10px;
+}
+nav ul {
+	list-style:none;
+	
+}
+
+nav ul li{
+	display: inline-block;
+	margin-right: 173px;
+	
+} 
+
+nav ul li a{
+	font-size:14pt;
+	line-height: 44px;
+	color: #ffffff;
+	text-decoration: none;
+	
+}
+
+
+nav ul li ul{
+	display:none;
+	position:absolute;
+}
+
+nav ul li:hover ul{
+	display: block;
+	background: rgba(65, 55, 55);
+	border: 1px solid rgb(65, 55, 55);
+	margin-top: -6px;
+	margin-left: 5px;
+	
+	
+}
+
+nav ul li ul li{
+	display: block;
+	margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+#forside_wrapper {
+	width: 900px;
+	margin: 0 auto;
+}
+
+#forside_header {
+	padding: 30px 0 10px;
+}
+
+#forside_menu {
+	height: 90px;
+	padding: 10px 0;
+	background: url(../images/template_menu_bg.png) no-repeat
+}
+
+#forside_main {
+	padding: 30px;
+	background: url(../images/template_main.png) repeat-y
+}
+
+
+
+
+
+
+/* good*/
+#gallery { margin: 0; padding: 0; list-style: none }
+#gallery li { margin: 0; padding: 0; }
+#gallery li a { display: block; float: left; margin: 0 5px 5px 0; border: 6px solid #9aaacf  }
+#gallery li a.no_margin_right { margin-right: 0 }
+
+
+/*Side meny*/
+.col { float: left; margin-right: 40px }
+.col_12 { width: 380px }
+.col_13 { width: 240px }
+.col_23 { width: 520px }
+.no_margin_right { margin-right: 0 }
+
+
+
+
+@media print{
+    body{
+        filter: grayscale(100%);
+    }
+}
